@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+body {
+  padding: 10px;
+  margin: 30px;
+}
+
+h1 {
+  margin: 30px;
+}
+
 .task_details {
   background-color: rgb(240, 240, 240);
   border-radius: 5px;
@@ -9,7 +19,7 @@
   margin: 10px;
 }
 
-p {
-  padding: 10px;
-  margin: 10px;
+
+.task-form {
+  margin: 30px;
 }

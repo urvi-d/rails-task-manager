@@ -6,4 +6,4 @@
 
 <p><input type="checkbox" <%= "checked" if @task.completed%>> <%= @task.completed ? "All done!" : "Not yet done..." %></p>
 
-
+<p> <%= link_to 'Back to tasks list', tasks_path %> </p>

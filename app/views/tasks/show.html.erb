@@ -1,9 +1,12 @@
-<h1><%= @task.title %></h1>
-
+<div class='header-flexbox'>
+  <h1><%= @task.title %></h1>
+  <button class='btn-light'><%= link_to 'Edit this task', edit_task_path %></button>
+</div>
+<hr>
 <div class="task_details">
   <p><%= @task.details %></p>
 </div>
 
 <p><input type="checkbox" <%= "checked" if @task.completed%>> <%= @task.completed ? "All done!" : "Not yet done..." %></p>
-
-<p> <%= link_to 'Back to tasks list', tasks_path %> </p>
+<hr>
+<p> <%= link_to 'Back to tasks list', tasks_path %>  |  <%= link_to delete_task_path(@task), method: :delete, data: { confirm: "Are you sure?"} do %><i class="far fa-trash-alt"></i> <% end %></p>

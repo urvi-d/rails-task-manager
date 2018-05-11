@@ -9,17 +9,37 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 0;
+}
+
+p {
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+}
+
+.header-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+  width: 100%;
 }
 
 .task_details {
   background-color: rgb(240, 240, 240);
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
 }
-
 
 .task-form {
   margin: 30px;
+}
+
+.btn-light {
+  height: 35px;
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  background-color: rgb(230, 230, 230);
+  border-radius: 3px;
+  align-self: flex-end;
 }

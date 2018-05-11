@@ -1,0 +1,9 @@
+<h1><%= @task.title %></h1>
+
+<div class="task_details">
+  <p><%= @task.details %></p>
+</div>
+
+<p><input type="checkbox" <%= "checked" if @task.completed%>> <%= @task.completed ? "All done!" : "Not yet done..." %></p>
+
+
